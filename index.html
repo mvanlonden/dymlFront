@@ -3,13 +3,18 @@
 <head>
     <title>Dyml</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
-    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
     <link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <style>
         .noIcon .ui-icon{
             display: none;
+        }
+        .med .ui-icon{
+            background-color: transparent;
+            box-shadow: none;
+            background-image:url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2214px%22%20height%3D%2214px%22%20viewBox%3D%220%200%2014%2014%22%20style%3D%22enable-background%3Anew%200%200%2014%2014%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20fill%3D%22%23FFF%22%20points%3D%2214%2C3%2011%2C0%207%2C4%203%2C0%200%2C3%204%2C7%200%2C11%203%2C14%207%2C10%2011%2C14%2014%2C11%2010%2C7%20%22%2F%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3C%2Fsvg%3E")
         }
         .drug{
 
@@ -53,13 +58,13 @@
         <div class="medList" data-role="collapsible-set">
 
 
-    <div class="newMed" data-role="collapsible"  data-collapsed-icon="alert" data-expanded-icon="alert" data-iconpos="right" data-theme="b" data-content-theme="b">
+    <div class="newMed med" data-role="collapsible"  data-collapsed-icon="alert" data-expanded-icon="alert" data-iconpos="right" data-theme="b" data-content-theme="b">
     <h3>Section 1</h3>
     <h4><strong>Warning</strong> you are already prescribed this medication</h4>
     <p>I'm the collapsible set content for section 1.</p>
     </div>
 
-    <div class="" data-role="collapsible"  data-collapsed="false" data-collapsed-icon="alert" data-expanded-icon="alert" data-iconpos="right" data-theme="b" data-content-theme="b">
+    <div class="med" data-role="collapsible"  data-collapsed="false" data-collapsed-icon="alert" data-expanded-icon="alert" data-iconpos="right" data-theme="b" data-content-theme="b">
     <h3>Amoxicillin</h3>
     <p>
     <div id="block" class="ui-grid-a">
@@ -102,22 +107,22 @@
 </div>
     
 
-    <div class="newMed" data-role="collapsible"  data-collapsed="false" data-collapsed-icon="alert" data-expanded-icon="alert" data-iconpos="right" data-theme="e" data-content-theme="e">
+    <div class="newMed med" data-role="collapsible"  data-collapsed="false" data-collapsed-icon="alert" data-expanded-icon="alert" data-iconpos="right" data-theme="e" data-content-theme="e">
     <h3>Section 1</h3>
     <p>I'm the collapsible set content for section 1.</p>
     </div>
 
-    <div class="noIcon" data-role="collapsible" data-iconpos="right">
+    <div class="noIcon med" data-role="collapsible" data-iconpos="right">
     <h3>Amoxicillin</h3>
     <p>Warning: Allergy</p>
     </div>
     
-    <div class="noIcon" data-role="collapsible" data-iconpos="right">
+    <div class="noIcon med" data-role="collapsible" data-iconpos="right">
     <h3>Simvastatin</h3>
     <p>Warning: Similar to Atorvastatin</p>
     </div>
 
-    <div class="noIcon" data-role="collapsible" data-iconpos="right">
+    <div class="noIcon med" data-role="collapsible" data-iconpos="right">
     <h3>Prozac</h3>
     <p>10mg <br> Once Daily</p>
     </div>
