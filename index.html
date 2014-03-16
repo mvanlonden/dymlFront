@@ -49,6 +49,18 @@
       height: 100px;
 
     }
+    .warning{
+      color: red;
+      margin-left:auto;
+      margin-right:auto;
+      width: 20%;
+    }
+    .desc{
+      font-weight: 200;
+      margin-left:auto;
+      margin-right:auto;
+      width: 80%;
+    }
   </style>
 </head>
 <body class="ui-nodisc-icon">
@@ -59,8 +71,22 @@
     </div><!-- /header -->
     <div class="medList ui-content" data-inset="false" role="main" data-role="collapsible-set" data-corners="false">
 
-      <div class="newMed new alert" data-role="collapsible"  data-collapsed="" data-collapsed-icon="forbidden" data-expanded-icon="forbidden" data-iconpos="left" data-theme="b" data-content-theme="b">
+      <div class="newMed new alert" data-role="collapsible"  data-collapsed="" data-collapsed-icon="forbidden" data-exapanded-icon="forbidden" data-iconpos="left" data-theme="b" data-content-theme="b">
         <h3>Amoxicillin</h3>
+        <p>
+        <div class="warning">Warning:</div>
+              <div class="desc">You are allergic to Penicillin, which is similar <br>to Amoxicillin. Contact Dr. Gupta before taking.</div>
+          <div class="ui-grid-b ui-responsive">
+              <div class="ui-block-a"><a href="#" class="ui-shadow ui-btn" data-corners="false">
+              
+              <i id="icon" class="fa fa-envelope-o"></i><br></a></div>
+
+          </div>
+        </p>
+      </div>
+
+    <div class="newMed new alert" data-role="collapsible"  data-collapsed="" data-collapsed-icon="warning" data-expanded-icon="warning" data-iconpos="left" data-theme="b" data-content-theme="b">
+        <h3>Simvastatin</h3>
         <p>
           <div class="ui-grid-b ui-responsive">
               <div class="ui-block-a"><a href="#" class="ui-shadow ui-btn" data-corners="false"><i class="fa fa-envelope-o"></i><br>Email Doctor</a></div>
@@ -69,15 +95,16 @@
         </p>
       </div>
 
-      <div class="med" data-role="collapsible" data-iconpos="left" data-collapsed-icon="carat-d" data-expanded-icon="arrow-d">
-        <h3>Amoxicillin</h3>
-        <p><div class="ui-navbar" role="navigation">
+    <div class="newMed med alert" data-role="collapsible" data-iconpos="left" data-collapsed-icon="carat-d" data-expanded-icon="false">
+        <h3>Prozac</h3>
+        <p>
+          <div class="ui-navbar" role="navigation">
             <ul class="ui-grid-a">
               <li class="ui-block-a">
                 <a href="index.html" class="ui-link ui-btn">
                   <i id="icon" class="fa fa-clock-o"></i><br>
                   <div class="blockTitle">
-                    Six Hours
+                    One Pill, Once Daily
                   </div>
                 </a>
               </li>
@@ -85,7 +112,7 @@
                 <a href="page-b.html" class="ui-link ui-btn">
                   <i id="icon" class="fa fa-calendar"></i><br>
                   <div class="blockTitle"> 
-                    Per Day
+                    From 3/16/14
                   </div>
                 </a>
               </li>
@@ -97,7 +124,7 @@
                 <a href="index.html" class="ui-link ui-btn">
                   <i id="icon" class="fa fa-hospital-o"></i><br>
                   <div class="blockTitle">
-                    B.M.C
+                    B.W.H
                   </div>
                 </a>
               </li>
@@ -113,16 +140,17 @@
           </div>
         </p>
       </div>
-
-      <div class="med" data-role="collapsible" data-iconpos="left" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
-        <h3>Simvastatin</h3>
-        <p><div class="ui-navbar" role="navigation">
+    
+    <div class="med" data-role="collapsible" data-iconpos="left" data-collapsed-icon="carat-d" data-expanded-icon="false">
+        <h3>Coumadin</h3>
+        <p>
+          <div class="ui-navbar" role="navigation">
             <ul class="ui-grid-a">
               <li class="ui-block-a">
                 <a href="index.html" class="ui-link ui-btn">
                   <i id="icon" class="fa fa-clock-o"></i><br>
                   <div class="blockTitle">
-                    Six Hours
+                    One Pill, Once Daily
                   </div>
                 </a>
               </li>
@@ -130,7 +158,7 @@
                 <a href="page-b.html" class="ui-link ui-btn">
                   <i id="icon" class="fa fa-calendar"></i><br>
                   <div class="blockTitle"> 
-                    Per Day
+                    From 3/16/2013
                   </div>
                 </a>
               </li>
@@ -142,7 +170,99 @@
                 <a href="index.html" class="ui-link ui-btn">
                   <i id="icon" class="fa fa-hospital-o"></i><br>
                   <div class="blockTitle">
-                    B.M.C
+                    B.W.H
+                  </div>
+                </a>
+              </li>
+              <li class="ui-block-b">
+                <a href="page-b.html" class="ui-link ui-btn">
+                  <i id="icon" class="fa fa-user-md"></i><br>
+                  <div class="blockTitle">
+                    Dr. Doe
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </p>
+      </div>
+    
+    <div class="med" data-role="collapsible" data-iconpos="left" data-collapsed-icon="carat-d" data-expanded-icon="false">
+        <h3>Atorvastatin</h3>
+        <p>
+          <div class="ui-navbar" role="navigation">
+            <ul class="ui-grid-a">
+              <li class="ui-block-a">
+                <a href="index.html" class="ui-link ui-btn">
+                  <i id="icon" class="fa fa-clock-o"></i><br>
+                  <div class="blockTitle">
+                    One Pill, Once Daily
+                  </div>
+                </a>
+              </li>
+              <li class="ui-block-b">
+                <a href="page-b.html" class="ui-link ui-btn">
+                  <i id="icon" class="fa fa-calendar"></i><br>
+                  <div class="blockTitle"> 
+                    From 3/16/14
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="ui-navbar" role="navigation">
+            <ul class="ui-grid-a">
+              <li class="ui-block-a">
+                <a href="index.html" class="ui-link ui-btn">
+                  <i id="icon" class="fa fa-hospital-o"></i><br>
+                  <div class="blockTitle">
+                    B.W.H
+                  </div>
+                </a>
+              </li>
+              <li class="ui-block-b">
+                <a href="page-b.html" class="ui-link ui-btn">
+                  <i id="icon" class="fa fa-user-md"></i><br>
+                  <div class="blockTitle">
+                    Dr. Doe
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </p>
+      </div>
+  
+      <div class="med" data-role="collapsible" data-iconpos="left" data-collapsed-icon="carat-d" data-expanded-icon="false">
+        <h3>Metformin</h3>
+        <p>
+          <div class="ui-navbar" role="navigation">
+            <ul class="ui-grid-a">
+              <li class="ui-block-a">
+                <a href="index.html" class="ui-link ui-btn">
+                  <i id="icon" class="fa fa-clock-o"></i><br>
+                  <div class="blockTitle">
+                    Two Pills, Twice Daily
+                  </div>
+                </a>
+              </li>
+              <li class="ui-block-b">
+                <a href="page-b.html" class="ui-link ui-btn">
+                  <i id="icon" class="fa fa-calendar"></i><br>
+                  <div class="blockTitle"> 
+                    From 3/16/14
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="ui-navbar" role="navigation">
+            <ul class="ui-grid-a">
+              <li class="ui-block-a">
+                <a href="index.html" class="ui-link ui-btn">
+                  <i id="icon" class="fa fa-hospital-o"></i><br>
+                  <div class="blockTitle">
+                    B.W.H
                   </div>
                 </a>
               </li>
@@ -156,52 +276,8 @@
               </li>
             </ul>
           </div>
-          </p>
-      </div>
-
-      <div class="med" data-swipeurl="swiped.html?3" data-role="collapsible" data-iconpos="left" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
-        <h3>Prozac</h3>
-        <p><div class="ui-navbar" role="navigation">
-            <ul class="ui-grid-a">
-              <li class="ui-block-a">
-                <a href="index.html" class="ui-link ui-btn">
-                  <i id="icon" class="fa fa-clock-o"></i><br>
-                  <div class="blockTitle">
-                    Six Hours
-                  </div>
-                </a>
-              </li>
-              <li class="ui-block-b">
-                <a href="page-b.html" class="ui-link ui-btn">
-                  <i id="icon" class="fa fa-calendar"></i><br>
-                  <div class="blockTitle"> 
-                    Per Day
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="ui-navbar" role="navigation">
-            <ul class="ui-grid-a">
-              <li class="ui-block-a">
-                <a href="index.html" class="ui-link ui-btn">
-                  <i id="icon" class="fa fa-hospital-o"></i><br>
-                  <div class="blockTitle">
-                    B.M.C
-                  </div>
-                </a>
-              </li>
-              <li class="ui-block-b">
-                <a href="page-b.html" class="ui-link ui-btn">
-                  <i id="icon" class="fa fa-user-md"></i><br>
-                  <div class="blockTitle">
-                    Dr. Gupta
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div></p>
-      </div>
+        </p>
+      </div>    
 
     </div> <!--End of List -->
     <div data-role="panel" id="left-panel" data-theme="b">
