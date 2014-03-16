@@ -62,7 +62,16 @@
       <div class="newMed new alert" data-role="collapsible"  data-collapsed="" data-collapsed-icon="alert" data-expanded-icon="alert" data-iconpos="right" data-theme="b" data-content-theme="b">
         <h3>Amoxicillin</h3>
         <p>
-          <div class="ui-navbar" role="navigation">
+          <div class="ui-grid-b ui-responsive">
+              <div class="ui-block-a"><a href="#" class="ui-shadow ui-btn" data-corners="false"><i class="fa fa-envelope-o"></i><br>Email Doctor</a></div>
+
+          </div>
+        </p>
+      </div>
+
+      <div class="med" data-role="collapsible" data-iconpos="left" data-collapsed-icon="carat-d" data-expanded-icon="arrow-d">
+        <h3>Amoxicillin</h3>
+        <p><div class="ui-navbar" role="navigation">
             <ul class="ui-grid-a">
               <li class="ui-block-a">
                 <a href="index.html" class="ui-link ui-btn">
@@ -101,19 +110,7 @@
                 </a>
               </li>
             </ul>
-          </div>
-        </p>
-      </div>
-
-
-      <div class="newMed med alert" data-role="collapsible"  data-collapsed="" data-collapsed-icon="alert" data-expanded-icon="alert" data-iconpos="left" data-theme="e" data-content-theme="e">
-        <h3>Section 1</h3>
-        <p>I'm the collapsible set content for section 1.</p>
-      </div>
-
-      <div class="med" data-role="collapsible" data-iconpos="left" data-collapsed-icon="carat-d" data-expanded-icon="arrow-d">
-        <h3>Amoxicillin</h3>
-        <p>Warning: Allergy</p>
+          </div></p>
       </div>
 
       <div class="med" data-role="collapsible" data-iconpos="left" data-collapsed-icon="carat-d" data-expanded-icon="false">
@@ -139,7 +136,7 @@
 
         $('.newMed').hide();
         $('html').keypress(function(){
-            $('.newMed').show();
+        $('.newMed').show();
         });
 
         $(this).find('ul[data-role="listview"]').children().children().append('<span class="ui-icon ui-icon-home ui-icon-shadow" style="right:30px;">&nbsp;</span>');
