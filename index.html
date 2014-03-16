@@ -59,7 +59,7 @@
     </div><!-- /header -->
     <div class="medList ui-content" data-inset="false" role="main" data-role="collapsible-set" data-corners="false">
 
-      <div class="newMed new alert" data-role="collapsible"  data-collapsed="" data-collapsed-icon="alert" data-expanded-icon="alert" data-iconpos="right" data-theme="b" data-content-theme="b">
+      <div class="newMed new alert" data-role="collapsible"  data-collapsed="" data-collapsed-icon="forbidden" data-expanded-icon="forbidden" data-iconpos="left" data-theme="b" data-content-theme="b">
         <h3>Amoxicillin</h3>
         <p>
           <div class="ui-navbar" role="navigation">
@@ -111,26 +111,30 @@
         <p>I'm the collapsible set content for section 1.</p>
       </div>
 
-      <div class="med" data-role="collapsible" data-iconpos="left" data-collapsed-icon="carat-d" data-expanded-icon="arrow-d">
+      <div class="newMed med alert" data-role="collapsible"  data-collapsed="" data-collapsed-icon="alert" data-expanded-icon="alert" data-iconpos="left" data-theme="e" data-content-theme="e">
+        <h3>Section 1</h3>
+        <p>I'm the collapsible set content for section 1.</p>
+      </div>
+
+      <div class="med" data-role="collapsible" data-iconpos="left" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
         <h3>Amoxicillin</h3>
         <p>Warning: Allergy</p>
       </div>
 
-      <div class="med" data-role="collapsible" data-iconpos="left" data-collapsed-icon="carat-d" data-expanded-icon="false">
+      <div class="med" data-role="collapsible" data-iconpos="left" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
         <h3>Simvastatin</h3>
         <p>Warning: Similar to Atorvastatin</p>
       </div>
 
-      <div class="med" data-swipeurl="swiped.html?3" data-role="collapsible" data-iconpos="left" data-collapsed-icon="carat-d" data-expanded-icon="false">
+      <div class="med" data-swipeurl="swiped.html?3" data-role="collapsible" data-iconpos="left" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
         <h3>Prozac</h3>
         <p>10mg <br> Once Daily</p>
       </div>
 
     </div> <!--End of List -->
-    <button id="test">test<button>
     <div data-role="panel" id="left-panel" data-theme="b">
         <p>Account</p>
-        <a href="#" data-icon="carat-r" data-rel="close" class="ui-nodisc-icon ui-icon-carat-r ui-btn-icon-left ui-btn-right" data-iconshadow="false" style="margin-top:18px;"></a>
+        <a href="#" data-icon="carat-r" data-rel="close" class="ui-nodisc-icon ui-icon-alert ui-btn-icon-right ui-btn-right" data-iconshadow="false" style="margin-top:18px;"></a>
     </div><!-- /panel -->
   </div><!-- /page -->
 
@@ -142,7 +146,7 @@
             $('.newMed').show();
         });
 
-        $(this).find('ul[data-role="listview"]').children().children().append('<span class="ui-icon ui-icon-home ui-icon-shadow" style="right:30px;">&nbsp;</span>');
+        $(this).find('.medList').children().children().append('<span class="ui-icon ui-icon-home ui-icon-shadow" style="right:30px;"></span>');
 
         $('.med').swipeDelete({
                 btnTheme: 'a',
