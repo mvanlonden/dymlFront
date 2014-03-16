@@ -62,7 +62,16 @@
       <div class="newMed new alert" data-role="collapsible"  data-collapsed="" data-collapsed-icon="forbidden" data-expanded-icon="forbidden" data-iconpos="left" data-theme="b" data-content-theme="b">
         <h3>Amoxicillin</h3>
         <p>
-          <div class="ui-navbar" role="navigation">
+          <div class="ui-grid-b ui-responsive">
+              <div class="ui-block-a"><a href="#" class="ui-shadow ui-btn" data-corners="false"><i class="fa fa-envelope-o"></i><br>Email Doctor</a></div>
+
+          </div>
+        </p>
+      </div>
+
+      <div class="med" data-role="collapsible" data-iconpos="left" data-collapsed-icon="carat-d" data-expanded-icon="arrow-d">
+        <h3>Amoxicillin</h3>
+        <p><div class="ui-navbar" role="navigation">
             <ul class="ui-grid-a">
               <li class="ui-block-a">
                 <a href="index.html" class="ui-link ui-btn">
@@ -105,30 +114,92 @@
         </p>
       </div>
 
-
-      <div class="newMed med alert" data-role="collapsible"  data-collapsed="" data-collapsed-icon="alert" data-expanded-icon="alert" data-iconpos="left" data-theme="e" data-content-theme="e">
-        <h3>Section 1</h3>
-        <p>I'm the collapsible set content for section 1.</p>
-      </div>
-
-      <div class="newMed med alert" data-role="collapsible"  data-collapsed="" data-collapsed-icon="alert" data-expanded-icon="alert" data-iconpos="left" data-theme="e" data-content-theme="e">
-        <h3>Section 1</h3>
-        <p>I'm the collapsible set content for section 1.</p>
-      </div>
-
-      <div class="med" data-role="collapsible" data-iconpos="left" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
-        <h3>Amoxicillin</h3>
-        <p>Warning: Allergy</p>
-      </div>
-
       <div class="med" data-role="collapsible" data-iconpos="left" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
         <h3>Simvastatin</h3>
-        <p>Warning: Similar to Atorvastatin</p>
+        <p><div class="ui-navbar" role="navigation">
+            <ul class="ui-grid-a">
+              <li class="ui-block-a">
+                <a href="index.html" class="ui-link ui-btn">
+                  <i id="icon" class="fa fa-clock-o"></i><br>
+                  <div class="blockTitle">
+                    Six Hours
+                  </div>
+                </a>
+              </li>
+              <li class="ui-block-b">
+                <a href="page-b.html" class="ui-link ui-btn">
+                  <i id="icon" class="fa fa-calendar"></i><br>
+                  <div class="blockTitle"> 
+                    Per Day
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="ui-navbar" role="navigation">
+            <ul class="ui-grid-a">
+              <li class="ui-block-a">
+                <a href="index.html" class="ui-link ui-btn">
+                  <i id="icon" class="fa fa-hospital-o"></i><br>
+                  <div class="blockTitle">
+                    B.M.C
+                  </div>
+                </a>
+              </li>
+              <li class="ui-block-b">
+                <a href="page-b.html" class="ui-link ui-btn">
+                  <i id="icon" class="fa fa-user-md"></i><br>
+                  <div class="blockTitle">
+                    Dr. Gupta
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          </p>
       </div>
 
       <div class="med" data-role="collapsible" data-iconpos="left" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
         <h3>Prozac<a href="#" style="float:right" data-enhanced="true" class="ui-icon-delete ui-input-btn ui-mini ui-btn-icon-right ui-btn-inline"></a></h3>
-        <p>10mg <br> Once Daily</p>
+        <p>
+            <ul class="ui-grid-a">
+              <li class="ui-block-a">
+                <a href="index.html" class="ui-link ui-btn">
+                  <i id="icon" class="fa fa-clock-o"></i><br>
+                  <div class="blockTitle">
+                    Six Hours
+                  </div>
+                </a>
+              </li>
+              <li class="ui-block-b">
+                <a href="page-b.html" class="ui-link ui-btn">
+                  <i id="icon" class="fa fa-calendar"></i><br>
+                  <div class="blockTitle"> 
+                    Per Day
+                  </div>
+                </a>
+              </li>
+            </ul>
+          <div class="ui-navbar" role="navigation">
+            <ul class="ui-grid-a">
+              <li class="ui-block-a">
+                <a href="index.html" class="ui-link ui-btn">
+                  <i id="icon" class="fa fa-hospital-o"></i><br>
+                  <div class="blockTitle">
+                    B.M.C
+                  </div>
+                </a>
+              </li>
+              <li class="ui-block-b">
+                <a href="page-b.html" class="ui-link ui-btn">
+                  <i id="icon" class="fa fa-user-md"></i><br>
+                  <div class="blockTitle">
+                    Dr. Gupta
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div></p>
       </div>
 
     </div> <!--End of List -->
@@ -143,7 +214,7 @@
 
         $('.newMed').hide();
         $('html').keypress(function(){
-            $('.newMed').show();
+        $('.newMed').show();
         });
 
         $(this).find('.medList').children().children().append('<span class="ui-icon ui-icon-home ui-icon-shadow" style="right:30px;"></span>');
