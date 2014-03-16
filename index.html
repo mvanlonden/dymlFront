@@ -53,7 +53,7 @@
   <div data-role="page" id="page" data-url="page">
     <div data-role="header">
       <h1>Dyml</h1>
-       <a href="#left-panel" data-icon="carat-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon">Open left panel</a>
+       <a href="#left-panel" data-icon="user" data-iconpos="notext" data-shadow="true" data-iconshadow="false" class="ui-alt-icon ui-btn-icon-notext ui-shadow" >Account Panel</a>
     </div><!-- /header -->
     <div class="ui-content" data-inset="false" role="main" data-role="collapsible-set" data-corners="false">
 
@@ -126,8 +126,8 @@
 
     </div> <!--End of List -->
     <div data-role="panel" id="left-panel" data-theme="b">
-        <p>Left reveal panel.</p>
-        <a href="#" data-rel="close" class="ui-btn ui-corner-all ui-shadow ui-mini ui-btn-inline ui-icon-delete ui-btn-icon-left ui-btn-right">Close</a>
+        <p>Account</p>
+        <a href="#" data-icon="carat-r" data-rel="close" class="ui-nodisc-icon ui-icon-carat-r ui-btn-icon-left ui-btn-right" data-iconshadow="false" style="margin-top:18px;"></a>
     </div><!-- /panel -->
   </div><!-- /page -->
 
@@ -144,8 +144,8 @@
         $( "#left-panel" ).panel( "open" );
           
 
+        });
     });
-});
 
 
   </script>
