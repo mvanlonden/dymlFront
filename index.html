@@ -6,7 +6,9 @@
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+  <script src="./jquery.swipeButton.js"></script>
   <link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="./jquery.swipeButton.css" rel="stylesheet">
   <style>
     .drug{
 
@@ -55,7 +57,7 @@
       <h1>Dyml</h1>
        <a href="#left-panel" data-icon="carat-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon">Open left panel</a>
     </div><!-- /header -->
-    <div class="ui-content" data-inset="false" role="main" data-role="collapsible-set" data-corners="false">
+    <div class="medList ui-content" data-inset="false" role="main" data-role="collapsible-set" data-corners="false">
 
 
       <div class="newMed med" data-role="collapsible"  data-collapsed-icon="alert" data-expanded-icon="alert" data-iconpos="right" data-theme="b" data-content-theme="b">
@@ -126,12 +128,13 @@
         <p>Warning: Similar to Atorvastatin</p>
       </div>
 
-      <div class="med" data-role="collapsible" data-iconpos="right" data-collapsed-icon="false" data-expanded-icon="false">
+      <div class="med" data-swipeurl="swiped.html?3" data-role="collapsible" data-iconpos="right" data-collapsed-icon="false" data-expanded-icon="false">
         <h3>Prozac</h3>
         <p>10mg <br> Once Daily</p>
       </div>
 
     </div> <!--End of List -->
+    <button id="test">test<button>
     <div data-role="panel" id="left-panel" data-theme="b">
         <p>Left reveal panel.</p>
         <a href="#" data-rel="close" class="ui-btn ui-corner-all ui-shadow ui-mini ui-btn-inline ui-icon-delete ui-btn-icon-left ui-btn-right">Close</a>
@@ -139,9 +142,29 @@
   </div><!-- /page -->
 
   <script>
-    $('.newMed').hide();
-    $('html').keypress(function(){
-      $('.newMed').show();
+    $(function(){
+        $('.newMed').hide();
+        $('html').keypress(function(){
+            $('.newMed').show();
+        });
+
+        $('.med').swipeDelete({
+                btnTheme: 'a',
+                btnLabel: 'Delete    ',
+                btnClass: 'ui-mini',
+                click: function(e){
+                    e.preventDefault();
+                    var url = $(e.target).attr('href');
+                    $(this).parents('li').slideUp();
+                    $.post(url, function(data) {
+                        console.log(data);
+                    });
+                }
+            });
+
+            $('#test').on('click', function(){
+                $('.medList div:nth-child(3)').trigger('swiperight')
+            });
     });
     
 
