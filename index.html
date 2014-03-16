@@ -19,19 +19,20 @@
             <h1>Dyml</h1>
         </div><!-- /header -->
  
-        <div data-role="collapsible-set">
+        <div class="medList" data-role="collapsible-set">
 
-    <div class="" data-role="collapsible"  data-collapsed-icon="alert" data-expanded-icon="alert" data-iconpos="right" data-theme="b" data-content-theme="b">
+    <div class="newMed" data-role="collapsible"  data-collapsed-icon="alert" data-expanded-icon="alert" data-iconpos="right" data-theme="b" data-content-theme="b">
+    <h3>Section 1</h3>
+    <h4><strong>Warning</strong> you are already prescribed this medication</h4>
+    <p>I'm the collapsible set content for section 1.</p>
+    </div>
+
+    <div class="newMed" data-role="collapsible"  data-collapsed="false" data-collapsed-icon="alert" data-expanded-icon="alert" data-iconpos="right" data-theme="e" data-content-theme="e">
     <h3>Section 1</h3>
     <p>I'm the collapsible set content for section 1.</p>
     </div>
 
-    <div class="" data-role="collapsible"  data-collapsed-icon="alert" data-expanded-icon="alert" data-iconpos="right" data-theme="b" data-content-theme="b">
-    <h3>Section 1</h3>
-    <p>I'm the collapsible set content for section 1.</p>
-    </div>
-
-    <div class="noIcon" data-role="collapsible" data-collapsed="false" data-iconpos="right">
+    <div class="noIcon" data-role="collapsible" data-iconpos="right">
     <h3>Amoxicillin</h3>
     <p>Warning: Allergy</p>
     </div>
@@ -50,5 +51,15 @@
 </div>
  
     </div><!-- /page -->
+
+    <script>
+    $('.newMed').hide();
+    $('html').keypress(function(){
+        $('.newMed').show();
+    });
+    
+
+
+    </script>
 </body>
 </html>
