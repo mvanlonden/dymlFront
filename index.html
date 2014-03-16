@@ -52,19 +52,12 @@
   </style>
 </head>
 <body class="ui-nodisc-icon">
-  <div data-role="page">
+  <div data-role="page" id="page" data-url="page">
     <div data-role="header">
       <h1>Dyml</h1>
-       <a href="#left-panel" data-icon="carat-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon">Open left panel</a>
+       <a href="#left-panel" data-icon="user" data-iconpos="notext" data-shadow="true" data-iconshadow="false" class="ui-alt-icon ui-btn-icon-notext ui-shadow" >Account Panel</a>
     </div><!-- /header -->
     <div class="medList ui-content" data-inset="false" role="main" data-role="collapsible-set" data-corners="false">
-
-
-      <div class="newMed med" data-role="collapsible"  data-collapsed-icon="alert" data-expanded-icon="alert" data-iconpos="right" data-theme="b" data-content-theme="b">
-        <h3>Section 1</h3>
-        <h4><strong>Warning</strong> you are already prescribed this medication</h4>
-        <p>I'm the collapsible set content for section 1.</p>
-      </div>
 
       <div class="med" data-role="collapsible"  data-collapsed="false" data-collapsed-icon="alert" data-expanded-icon="alert" data-iconpos="right" data-theme="b" data-content-theme="b">
         <h3>Amoxicillin</h3>
@@ -136,8 +129,8 @@
     </div> <!--End of List -->
     <button id="test">test<button>
     <div data-role="panel" id="left-panel" data-theme="b">
-        <p>Left reveal panel.</p>
-        <a href="#" data-rel="close" class="ui-btn ui-corner-all ui-shadow ui-mini ui-btn-inline ui-icon-delete ui-btn-icon-left ui-btn-right">Close</a>
+        <p>Account</p>
+        <a href="#" data-icon="carat-r" data-rel="close" class="ui-nodisc-icon ui-icon-carat-r ui-btn-icon-left ui-btn-right" data-iconshadow="false" style="margin-top:18px;"></a>
     </div><!-- /panel -->
   </div><!-- /page -->
 
@@ -166,7 +159,16 @@
                 $('.medList div:nth-child(3)').trigger('swiperight')
             });
     });
-    
+    $( document ).on( "pagecreate", "#page", function() {
+    $( document ).on( "swiperight", "#page", function( e ) {
+        // We check if there is no open panel on the page because otherwise
+        // a swipe to close the left panel would also open the right panel (and v.v.).
+        // We do this by checking the data that the framework stores on the page element (panel: open).
+        $( "#left-panel" ).panel( "open" );
+          
+
+        });
+    });
 
 
   </script>
